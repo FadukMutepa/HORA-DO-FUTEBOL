@@ -4,6 +4,10 @@
  */
 
 import React, { useState, useEffect } from "react";
+import stadiumImage from "./assets/images/stadium_hero_banner_1782293718576.jpg";
+import ballImage from "./assets/images/soccer_ball_on_pitch_1782293734584.jpg";
+import trophyImage from "./assets/images/soccer_championship_trophy_1782293747985.jpg";
+import playerImage from "./assets/images/football_player_running_1782293763052.jpg";
 import { 
   Flame, 
   Clock, 
@@ -69,7 +73,7 @@ const INITIAL_NEWS: NewsItem[] = [
     category: "Nacional",
     readTime: "2 min",
     date: "Hoje, 10:24",
-    image: "/src/assets/images/soccer_ball_on_pitch_1782293734584.jpg",
+    image: ballImage,
     author: "Mateus Ribeiro",
     bulletSummary: [
       "Jovem de 18 anos assumiu a titularidade após lesão do capitão e não saiu mais do time.",
@@ -91,7 +95,7 @@ const INITIAL_NEWS: NewsItem[] = [
     category: "Copas",
     readTime: "3 min",
     date: "Há 2 horas",
-    image: "/src/assets/images/soccer_championship_trophy_1782293747985.jpg",
+    image: trophyImage,
     author: "Clarice Fontes",
     bulletSummary: [
       "Ambos os finalistas chegam sem desfalques por suspensão, força máxima garantida.",
@@ -113,7 +117,7 @@ const INITIAL_NEWS: NewsItem[] = [
     category: "Mercado",
     readTime: "2 min",
     date: "Há 4 horas",
-    image: "/src/assets/images/football_player_running_1782293763052.jpg",
+    image: playerImage,
     author: "Bruno Alencar",
     bulletSummary: [
       "Clube inglês sinaliza com proposta de 120 milhões de euros pelo centroavante.",
@@ -454,7 +458,7 @@ export default function App() {
                         category: "Nacional",
                         readTime: "1 min",
                         date: "Agora",
-                        image: "/src/assets/images/stadium_hero_banner_1782293718576.jpg",
+                        image: stadiumImage,
                         author: "Plantão Hora do Gol",
                         bulletSummary: [item, "Informação apurada em primeira mão pelos nossos correspondentes.", "Novas atualizações serão inseridas na grade principal em instantes."],
                         fullText: [item, "Nossa equipe de jornalismo esportivo está em contato direto com as fontes para trazer todos os desdobramentos deste fato.", "Acompanhe as próximas edições para mais informações sobre as consequências nos clubes e na tabela de classificação."]
@@ -476,7 +480,7 @@ export default function App() {
         {/* Stadium Background Image with premium darken overlay */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/src/assets/images/stadium_hero_banner_1782293718576.jpg" 
+            src={stadiumImage} 
             alt="Estádio de futebol lotado sob holofotes" 
             className="h-full w-full object-cover object-center opacity-40 scale-105 transition-transform duration-10000 ease-out"
             referrerPolicy="no-referrer"
