@@ -1,0 +1,6 @@
+{
+  "name": "Hora do Gol",
+  "description": "Um portal moderno e rápido de notícias de futebol, com leitura ágil e design responsivo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
